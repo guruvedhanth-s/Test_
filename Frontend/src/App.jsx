@@ -6,7 +6,7 @@ function App() {
 
   const handleSubmit=()=>{
     axios.post("http://localhost:3000/post",{data})
-    .try(()=>{
+    .then(()=>{
       console.log("Success")
     })
     .catch(()=>{
